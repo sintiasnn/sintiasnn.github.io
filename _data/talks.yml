@@ -5,6 +5,26 @@
 #   date: YYYY-MM-DD
 #   filename: slides PDF filename in assets/slides/ (leave empty if unavailable)
 
+- title: "Lesson learned: Things you should know before your first IaC setup"
+  event: "OpenInfra Indonesia Days 2025"
+  date: "2025-07-19"
+  filename: "Lesson learned_ Things you should know before your first IaC setup.pdf"
+
+- title: "Self-host your App without Docker? Why Not?"
+  event: "IT Bootcamp Integer#7 HMJTI Universitas Pendidikan Ganesha"
+  date: "2025-10-12"
+  filename: "Self-host your App without Docker_ Why Not_.pdf"
+
+- title: "EC2 Looked Normal, But Silently Failed: Investigating Hidden Issues Behind SSM"
+  event: "AWS Community Days Indonesia 2025"
+  date: "2025-10-25"
+  filename: "EC2 Looked Normal, But Silently Failed_ Investigating Hidden Issues Behind SSM.pdf"
+
+- title: "Peta Transformasi Digital: Public Cloud & Kekuatan Hybrid"
+  event: "Seminar Kuliah Pakar 1 Program Studi Teknik Informatika Universitas Darussalam Gontor"
+  date: "2025-11-08"
+  filename: "Peta Transformasi Digital_ Public Cloud & Kekuatan Hybrid.pdf"
+
 - title: "From Manual to Automated: Secure and Scalable VM Setup with GCE Metadata"
   event: "DevFest Bali 2025"
   date: "2025-12-06"
