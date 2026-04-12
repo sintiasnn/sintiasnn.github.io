@@ -5,6 +5,31 @@
 #   date: YYYY-MM-DD
 #   filename: slides PDF filename in assets/slides/ (leave empty if unavailable)
 
+- title: "All things about Kampus Merdeka!"
+  event: "Sharing Session Generation Girl Bali:Exploring The Keys To Success At Kampus Merdeka Program with Bangkit Graduates"
+  date: "2024-03-02"
+  filename: "All things about Kampus Merdeka.pdf"
+
+- title: "How can I thrive in the tech sector as a woman?"
+  event: "Sakapuan talks 2024: Speak Yourself"
+  date: "2024-04-21"
+  filename: "How can I thrive in the tech sector as a woman.pdf"
+
+- title: "Your journey to the cloud: Starting with Linux and Building Simple APIs"
+  event: "Elective Study Generation Girl Bali"
+  date: "2024-12-21"
+  filename: "Your journey to the cloud Starting with Linux and Building Simple APIs.pdf"
+
+- title: "MSIB Breakout Session"
+  event: "Satupadu Mentorship Summit MSIB Kampus Merdeka Chapter 2025"
+  date: "2025-01-06"
+  filename: "Satupadu Mentorship Summit MSIB Kampus Merdeka Chapter 2025.pdf"
+
+- title: "Relasi antara Adaptability dan Interprofessional Communication"
+  event: "Kuliah Tamu Mata Kuliah Interprofessional Communication Program Studi Farmasi Universitas Udayana"
+  date: "2025-06-02"
+  filename: "Relasi antara Adaptability dan Interprofessional Communication.pdf"
+
 - title: "Lesson learned: Things you should know before your first IaC setup"
   event: "OpenInfra Indonesia Days 2025"
   date: "2025-07-19"
