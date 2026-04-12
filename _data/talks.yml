@@ -1,0 +1,6 @@
+# talks data
+# fields:
+#   title: talk title
+#   event: event/conference name
+#   date: YYYY-MM-DD
+#   filename: slides PDF filename in assets/slides/ (leave empty if unavailable)
