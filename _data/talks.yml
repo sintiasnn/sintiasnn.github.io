@@ -4,3 +4,13 @@
 #   event: event/conference name
 #   date: YYYY-MM-DD
 #   filename: slides PDF filename in assets/slides/ (leave empty if unavailable)
+
+- title: "From Data Ingestion to Alert Firing: How Observability Works Under the Hood"
+  event: "Belajar Sambil Beramal - GDG Bandung"
+  date: "2026-03-01"
+  filename: ""
+
+- title: "Introducing Terraform Modules: Making Infrastructure As Code Easier"
+  event: "Ramadhan IT Session - Dicoding Cloud Community"
+  date: "2026-03-07"
+  filename: ""
