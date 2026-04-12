@@ -96,7 +96,7 @@ nav_order: 5
   {% for repo in site.data.github_repos_data %}
   <div class="col repo-item" 
        data-name="{{ repo.name | downcase }}" 
-       data-description="{{ repo.description | default: '' | downcase }}"
+       data-description="{{ repo.description | default: '' | downcase | replace: '"', '' }}"
        data-language="{{ repo.language | default: '' }}"
        data-stars="{{ repo.stargazers_count }}"
        data-forks="{{ repo.forks_count }}"
