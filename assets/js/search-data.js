@@ -4,27 +4,27 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-home",
-    title: "home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-blogs",
-          title: "blogs",
+          title: "Blogs",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
           },
         },{id: "nav-talks",
-          title: "talks",
+          title: "Talks",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/talks/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
@@ -38,14 +38,14 @@ ninja.data = [{
             window.location.href = "/repositories/";
           },
         },{id: "nav-certifications",
-          title: "certifications",
+          title: "Certifications",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/certifications/";
           },
         },{id: "nav-photos",
-          title: "photos",
+          title: "Photos",
           description: "",
           section: "Navigation",
           handler: () => {
