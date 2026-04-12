@@ -5,6 +5,11 @@
 #   date: YYYY-MM-DD
 #   filename: slides PDF filename in assets/slides/ (leave empty if unavailable)
 
+- title: "From Manual to Automated: Secure and Scalable VM Setup with GCE Metadata"
+  event: "DevFest Bali 2025"
+  date: "2025-12-06"
+  filename: "From Manual to Automated_ Secure and Scalable VM Setup with GCE Metadata.pdf"
+
 - title: "From Data Ingestion to Alert Firing: How Observability Works Under the Hood"
   event: "Belajar Sambil Beramal Season 6 GDG Bandung"
   date: "2026-03-01"
@@ -14,3 +19,8 @@
   event: "Ramadhan IT Session Dicoding Cloud Community"
   date: "2026-03-07"
   filename: "Introducing Terraform Modules_ Making Infrastructure As Code Easier.pdf"
+
+- title: "Going Keyless: Eliminating Credential Management in AWS Compute Resources"
+  event: "AWS Oceania Virtual Community Day 2026"
+  date: "2026-04-11"
+  filename: "Going Keyless_ Eliminating Credential Management in AWS Compute Resources.pdf"
