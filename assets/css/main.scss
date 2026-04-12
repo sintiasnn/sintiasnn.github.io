@@ -37,3 +37,7 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+html[data-theme="dark"] .social-icons img[src*="linktree"] {
+  filter: invert(1);
+}
