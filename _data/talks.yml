@@ -6,11 +6,11 @@
 #   filename: slides PDF filename in assets/slides/ (leave empty if unavailable)
 
 - title: "From Data Ingestion to Alert Firing: How Observability Works Under the Hood"
-  event: "Belajar Sambil Beramal - GDG Bandung"
+  event: "Belajar Sambil Beramal Season 6 GDG Bandung"
   date: "2026-03-01"
-  filename: ""
+  filename: "From Data Ingestion to Alert Firing_ How Observability Works Under the Hood.pdf"
 
 - title: "Introducing Terraform Modules: Making Infrastructure As Code Easier"
-  event: "Ramadhan IT Session - Dicoding Cloud Community"
+  event: "Ramadhan IT Session Dicoding Cloud Community"
   date: "2026-03-07"
-  filename: ""
+  filename: "Introducing Terraform Modules_ Making Infrastructure As Code Easier.pdf"
