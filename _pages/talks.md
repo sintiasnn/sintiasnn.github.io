@@ -16,7 +16,7 @@ nav_order: 3
       <span class="stat-label">Presentations</span>
     </div>
   </div>
-  <a href="https://github.com/sintiasnn/sintiasnn.github.io/tree/main/assets/slides" target="_blank" class="btn btn-primary btn-lg">
+  <a href="https://github.com/sintiasnn/sintiasnn.github.io/tree/main/assets/slides" target="_blank" class="btn btn-dark btn-lg">
     <i class="fa-solid fa-folder-open me-2"></i> Browse All Slides
   </a>
 </div>
@@ -50,7 +50,7 @@ nav_order: 3
         </div>
         <div class="mt-auto">
           {% unless talk.filename == "" or talk.filename == nil or talk.filename == blank %}
-          <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="btn btn-outline-primary btn-sm">
+          <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="btn btn-outline-theme btn-sm">
             <i class="fa-solid fa-eye me-1"></i> View Slides
           </a>
           {% else %}
@@ -134,13 +134,23 @@ nav_order: 3
   opacity: 0.8;
 }
 
-.slide-card .btn-outline-primary {
+.slide-card .btn-outline-theme {
   border-radius: 20px;
   font-size: 0.85rem;
   padding: 0.4rem 1rem;
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  background-color: transparent;
+  transition: all 0.2s ease;
 }
 
-.talks .btn-primary {
+.slide-card .btn-outline-theme:hover {
+  color: var(--global-bg-color);
+  background-color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+
+.talks .btn-dark {
   border-radius: 25px;
   padding: 0.75rem 2rem;
   font-weight: 500;
