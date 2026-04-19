@@ -18,6 +18,56 @@ pagination:
 
 <div class="post">
 
+<div class="blog-header text-center mb-5 mt-4">
+  <div class="blog-stats mb-4">
+    <div class="stat-item">
+      <span class="stat-number">{{ site.posts.size }}</span>
+      <span class="stat-label">Articles</span>
+    </div>
+  </div>
+  <a href="https://medium.com/@putusintias" target="_blank" class="btn btn-dark btn-lg">
+    <i class="fa-brands fa-medium me-2"></i> View Medium Profile
+  </a>
+</div>
+
+<style>
+.blog-header .btn-dark {
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+}
+.blog-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--global-theme-color);
+  line-height: 1;
+}
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+@media (max-width: 768px) {
+  .stat-number {
+    font-size: 2rem;
+  }
+  .blog-stats {
+    gap: 1rem;
+  }
+}
+</style>
+
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
 <br>
