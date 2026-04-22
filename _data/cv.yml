@@ -2,7 +2,7 @@ cv:
   name: Ni Putu Sintia Wati
   label: Infrastructure Engineer
   email: sintiawati.putu04@gmail.com
-  location: Bali, Indonesia
+  location: Bali, ID
   summary: Infrastructure Engineer with over a year of experience in cloud infrastructure, automation, and observability. I focus on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD.
 
   social_networks:
@@ -12,27 +12,27 @@ cv:
       username: sintiasnn
 
   sections:
-    Education:
-      - institution: Your University
-        area: Computer Science (Example)
-        studyType: Bachelor
-        start_date: 2020
-        end_date: 2024
-        location: City, Country
-        highlights:
-          - "GPA: 4.0/4.0"
-          - "Relevant coursework: Cloud Computing, Networking, Distributed Systems"
-
     Experience:
-      - company: Your Company Name
+      - company: Zero One Group
         position: Infrastructure Engineer
         start_date: 2024-10
         end_date: Present
-        location: City, Country
+        location: Jakarta, ID
         highlights:
           - "Building and maintaining cloud infrastructure using AWS/GCP"
           - "Automating workflows with CI/CD pipelines"
           - "Implementing observability and monitoring solutions"
+
+    Education:
+      - institution: Udayana University
+        area: Computer Science
+        studyType: Bachelor
+        start_date: 2019
+        end_date: 2023
+        location: Denpasar, ID
+        highlights:
+          - "GPA: 3.68/4.0"
+          - "Relevant coursework: Cloud Computing, Networking, Distributed Systems"
 
     Skills:
       - name: Cloud & Infrastructure
