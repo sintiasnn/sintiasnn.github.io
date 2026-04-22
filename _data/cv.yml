@@ -6,7 +6,7 @@
     - name: Languages
       value: Indonesian, English
     - name: Location
-      value: Bali, Indonesia
+      value: Bali, ID
 
 - title: Summary
   type: map
@@ -20,7 +20,7 @@
     - title: Infrastructure Engineer
       institution: Zero One Group
       year: Oct 2024 - Present
-      location: City, Country
+      location: Jakarta, ID
       description:
         - "Building and maintaining cloud infrastructure using AWS/GCP"
         - "Automating workflows with CI/CD pipelines"
@@ -32,7 +32,7 @@
     - title: S.Kom (Sarjana Komputer / Bachelor of Computer Science)
       institution: Udayana University
       year: 2019 - 2023
-      location: Bali, Indonesia
+      location: Bali, ID
       description:
         - "GPA: 3.68/4.0"
         - "Relevant coursework: Cloud Computing, Networking, Distributed Systems"
