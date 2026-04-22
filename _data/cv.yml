@@ -1,72 +1,54 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Ni Putu Sintia Wati
-    - name: Languages
-      value: Indonesian, English
-    - name: Location
-      value: Bali, ID
+cv:
+  name: Ni Putu Sintia Wati
+  label: Infrastructure Engineer
+  email: sintiawati.putu04@gmail.com
+  location: Bali, Indonesia
+  summary: Infrastructure Engineer with over a year of experience in cloud infrastructure, automation, and observability. I focus on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD.
 
-- title: Summary
-  type: map
-  contents:
-    - name: About Me
-      value: Infrastructure Engineer with over a year of experience in cloud infrastructure, automation, and observability. I focus on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD.
+  social_networks:
+    - network: GitHub
+      username: sintiasnn
+    - network: LinkedIn
+      username: sintiasnn
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Infrastructure Engineer
-      institution: Zero One Group
-      year: Oct 2024 - Present
-      location: Jakarta, ID
-      description:
-        - "Building and maintaining cloud infrastructure using AWS/GCP"
-        - "Automating workflows with CI/CD pipelines"
-        - "Implementing observability and monitoring solutions"
+  sections:
+    Education:
+      - institution: Your University
+        area: Computer Science (Example)
+        studyType: Bachelor
+        start_date: 2020
+        end_date: 2024
+        location: City, Country
+        highlights:
+          - "GPA: 4.0/4.0"
+          - "Relevant coursework: Cloud Computing, Networking, Distributed Systems"
 
-- title: Education
-  type: time_table
-  contents:
-    - title: S.Kom (Sarjana Komputer / Bachelor of Computer Science)
-      institution: Udayana University
-      year: 2019 - 2023
-      location: Bali, ID
-      description:
-        - "GPA: 3.68/4.0"
-        - "Relevant coursework: Cloud Computing, Networking, Distributed Systems"
+    Experience:
+      - company: Your Company Name
+        position: Infrastructure Engineer
+        start_date: 2024-10
+        end_date: Present
+        location: City, Country
+        highlights:
+          - "Building and maintaining cloud infrastructure using AWS/GCP"
+          - "Automating workflows with CI/CD pipelines"
+          - "Implementing observability and monitoring solutions"
 
-- title: Skills
-  type: nested_list
-  contents:
-    - title: Cloud & Infrastructure
-      items:
-        - AWS / Google Cloud Platform
-        - Infrastructure as Code (Terraform / Pulumi)
-        - Kubernetes & Docker
-    - title: Automation & CI/CD
-      items:
-        - GitHub Actions / GitLab CI
-        - Jenkins / ArgoCD
-    - title: Observability
-      items:
-        - Prometheus / Grafana
-        - ELK Stack / Datadog
+    Skills:
+      - name: Cloud & Infrastructure
+        keywords: AWS, Google Cloud Platform, Terraform, Pulumi, Kubernetes, Docker
+      - name: Automation & CI/CD
+        keywords: GitHub Actions, GitLab CI, Jenkins, ArgoCD
+      - name: Observability
+        keywords: Prometheus, Grafana, ELK Stack, Datadog
 
-- title: Community Involvement
-  type: time_table
-  contents:
-    - title: Core Team / Volunteer
-      institution: Tech Community Name
-      year: 2023 - Present
-      description:
-        - "Active contributor to open-source infrastructure projects"
+    Languages:
+      - name: Indonesian
+        summary: Native
+      - name: English
+        summary: Professional Working Proficiency
 
-- title: Links
-  type: map
-  contents:
-    - name: LinkedIn
-      value: <a href="https://linkedin.com/in/sintiasnn" target="_blank">linkedin.com/in/sintiasnn</a>
-    - name: GitHub
-      value: <a href="https://github.com/sintiasnn" target="_blank">github.com/sintiasnn</a>
+    Certificates:
+      - name: Cloud Practitioner (Example)
+        issuer: AWS
+        date: 2023-01-01
