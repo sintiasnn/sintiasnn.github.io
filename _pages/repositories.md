@@ -45,7 +45,7 @@ nav_order: 5
     </div>
   </div>
   {% endif %}
-  <a href="https://github.com/sintiasnn" target="_blank" class="btn btn-dark btn-lg">
+  <a href="https://github.com/sintiasnn" target="_blank" class="btn btn-theme btn-lg">
     <i class="fa-brands fa-github me-2"></i> View GitHub Profile
   </a>
 </div>

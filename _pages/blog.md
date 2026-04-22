@@ -25,7 +25,7 @@ pagination:
       <span class="stat-label">Articles</span>
     </div>
   </div>
-  <a href="https://medium.com/@putusintias" target="_blank" class="btn btn-dark btn-lg">
+  <a href="https://medium.com/@putusintias" target="_blank" class="btn btn-theme btn-lg">
     <i class="fa-brands fa-medium me-2"></i> View Medium Profile
   </a>
 </div>

@@ -16,7 +16,7 @@ nav_order: 3
       <span class="stat-label">Presentations</span>
     </div>
   </div>
-  <a href="https://github.com/sintiasnn/sintiasnn.github.io/tree/main/assets/slides" target="_blank" class="btn btn-dark btn-lg">
+  <a href="https://github.com/sintiasnn/sintiasnn.github.io/tree/main/assets/slides" target="_blank" class="btn btn-theme btn-lg">
     <i class="fa-solid fa-folder-open me-2"></i> Browse All Slides
   </a>
 </div>
