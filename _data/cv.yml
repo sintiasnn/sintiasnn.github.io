@@ -1,9 +1,9 @@
 cv:
   name: Ni Putu Sintia Wati
   label: "Infrastructure Engineer"
-  location: "Bali, Indonesia"
+  location: "Bali, ID"
   email: sintiawati.putu04@gmail.com
-  phone: ""
+  phone: "(62) 851-5875-7822"
   website: https://sintiasnn.github.io
   summary: "Infrastructure Engineer with experience in cloud infrastructure, automation, and observability. Focused on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD."
   social_networks:
@@ -13,25 +13,26 @@ cv:
       username: sintiasnn
   sections:
     Experience:
-      - company: Your Company Name
+      - company: Zero One Group
         position: Infrastructure Engineer
-        location: City, Country
-        start_date: 2024-10-01
+        location: Jakarta, ID
+        start_date: 2024-10-28
         end_date: present
         highlights:
-          - Building and maintaining cloud infrastructure using AWS/GCP
-          - Automating workflows with CI/CD pipelines
-          - Implementing observability and monitoring solutions
+          - Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates.
+          - Spearheading AWS setups and optimizing resource allocation. This involved fine-tuning compute instance sizes, database configurations, and networking components based on actual usage patterns, resulting in a more cost-effective and scalable infrastructure.
+          - Utilized Docker for containerization and orchestration of applications, improving scalability, deployment speed, and resource utilization.
+
     Education:
-      - institution: Your University
+      - institution: Universitas Udayana
         area: Computer Science
         studyType: Bachelor
-        location: City, Country
-        start_date: 2020-08-01
-        end_date: 2024-06-01
+        location: Badung, ID
+        start_date: 2019-08-01
+        end_date: 2023-06-24
         highlights:
-          - "GPA: 4.0/4.0"
-          - Relevant coursework in Cloud Computing and Networking
+          - "GPA: 3.68/4.0"
+          - Relevant coursework in Operating System Practicum, Data Structure, Data Communication and Computer Networking
     Skills:
       - name: Cloud & Infrastructure
         keywords: AWS, Google Cloud Platform, Terraform, Pulumi, Kubernetes, Docker
