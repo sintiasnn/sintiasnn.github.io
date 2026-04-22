@@ -1,51 +1,50 @@
 cv:
-  name: Ni Putu Sintia Wati
+  name: "Ni Putu Sintia Wati"
   label: "Infrastructure Engineer"
   location: "Bali, ID"
-  email: sintiawati.putu04@gmail.com
-  phone: "(62) 851-5875-7822"
-  website: https://sintiasnn.github.io
+  email: "sintiawati.putu04@gmail.com"
+  phone: "+6285158757822"
+  website: "https://sintiasnn.github.io"
   summary: "Infrastructure Engineer with experience in cloud infrastructure, automation, and observability. Focused on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD."
   social_networks:
-    - network: GitHub
-      username: sintiasnn
-    - network: LinkedIn
-      username: sintiasnn
+    - network: "GitHub"
+      username: "sintiasnn"
+    - network: "LinkedIn"
+      username: "sintiasnn"
   sections:
-    Experience:
-      - company: Zero One Group
-        position: Infrastructure Engineer
-        location: Jakarta, ID
-        start_date: 2024-10-28
-        end_date: present
+    experience:
+      - company: "Zero One Group"
+        position: "Infrastructure Engineer"
+        location: "Jakarta, ID"
+        start_date: "2024-10-28"
+        end_date: "present"
         highlights:
-          - Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates.
-          - Spearheading AWS setups and optimizing resource allocation. This involved fine-tuning compute instance sizes, database configurations, and networking components based on actual usage patterns, resulting in a more cost-effective and scalable infrastructure.
-          - Utilized Docker for containerization and orchestration of applications, improving scalability, deployment speed, and resource utilization.
-
-    Education:
-      - institution: Universitas Udayana
-        area: Computer Science
-        studyType: Bachelor
-        location: Badung, ID
-        start_date: 2019-08-01
-        end_date: 2023-06-24
+          - "Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates."
+          - "Spearheading AWS setups and optimizing resource allocation, resulting in a more cost-effective and scalable infrastructure."
+          - "Utilized Docker for containerization and orchestration of applications, improving scalability and deployment speed."
+    education:
+      - institution: "Universitas Udayana"
+        area: "Computer Science"
+        studyType: "Bachelor"
+        location: "Badung, ID"
+        start_date: "2019-08-01"
+        end_date: "2023-06-24"
         highlights:
           - "GPA: 3.68/4.0"
-          - Relevant coursework in Operating System Practicum, Data Structure, Data Communication and Computer Networking
-    Skills:
-      - name: Cloud & Infrastructure
-        keywords: AWS, Google Cloud Platform, Terraform, Pulumi, Kubernetes, Docker
-      - name: Automation & CI/CD
-        keywords: GitHub Actions, GitLab CI, Jenkins, ArgoCD
-      - name: Observability
-        keywords: Prometheus, Grafana, ELK Stack, Datadog
-    Languages:
-      - name: Indonesian
-        level: Native
-      - name: English
-        level: Professional Working Proficiency
-    Certificates:
-      - name: Cloud Practitioner
-        issuer: AWS
-        date: 2023-01-01
+          - "Relevant coursework in Operating Systems, Data Structures, and Networking."
+    skills:
+      - name: "Cloud & Infrastructure"
+        keywords: "AWS, Google Cloud Platform, Terraform, Pulumi, Kubernetes, Docker"
+      - name: "Automation & CI/CD"
+        keywords: "GitHub Actions, GitLab CI, Jenkins, ArgoCD"
+      - name: "Observability"
+        keywords: "Prometheus, Grafana, ELK Stack, Datadog"
+    languages:
+      - name: "Indonesian"
+        level: "Native"
+      - name: "English"
+        level: "Professional Working Proficiency"
+    certificates:
+      - name: "Cloud Practitioner"
+        issuer: "AWS"
+        date: "2023-01-01"
