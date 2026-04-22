@@ -4,9 +4,8 @@
 
 @use "variables" as v;
 
-html,
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif !important;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 /* Ensure that headers, navbars, and buttons also use Roboto */
@@ -21,29 +20,7 @@ h6,
 .btn,
 .nav-item,
 .dropdown-item {
-  font-family: "Roboto", Arial, Helvetica, sans-serif !important;
-}
-
-/* Protect icons from being overridden by Roboto */
-.fa,
-.fas,
-.fab,
-.far,
-.fal,
-.fad,
-.ai,
-[class^="ai-"],
-[class*=" ai-"] {
-  font-family: inherit !important; /* This allows them to use their specific font-family defined in their own CSS */
-}
-
-/* Specifically for Font Awesome and Academicons if inheritance fails */
-i.fas,
-i.fab,
-i.far,
-i.fa,
-i.ai {
-  font-family: inherit !important;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 p,
