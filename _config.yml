@@ -6,8 +6,7 @@ title: Putu Sintia # the website title (if blank, full name will be used instead
 first_name: Putu
 middle_name:
 last_name: Sintia
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: # the note will be removed if left blank
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Infrastructure Engineer | Cloud | Observability
 footer_text: >

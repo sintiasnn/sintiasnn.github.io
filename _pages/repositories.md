@@ -92,7 +92,7 @@ nav_order: 5
 
 <h2 class="section-title"><i class="fa-solid fa-folder-open me-2"></i>All Repositories</h2>
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mb-5" id="reposGrid">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5" id="reposGrid">
   {% for repo in site.data.github_repos_data %}
   <div class="col repo-item mb-4" 
        data-name="{{ repo.name | downcase }}" 

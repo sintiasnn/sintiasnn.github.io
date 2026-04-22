@@ -25,7 +25,7 @@ nav_order: 3
 
 {% assign sorted_talks = site.data.talks | sort: "date" | reverse %}
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mb-5" id="talksGrid">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5" id="talksGrid">
   {% for talk in sorted_talks %}
   {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
   <div class="col mb-4">
