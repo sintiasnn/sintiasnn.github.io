@@ -94,7 +94,7 @@ nav_order: 5
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mb-5" id="reposGrid">
   {% for repo in site.data.github_repos_data %}
-  <div class="col repo-item" 
+  <div class="col repo-item mb-4" 
        data-name="{{ repo.name | downcase }}" 
        data-description="{{ repo.description | default: '' | downcase | replace: '"', '' }}"
        data-language="{{ repo.language | default: '' }}"

@@ -28,7 +28,7 @@ nav_order: 3
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mb-5" id="talksGrid">
   {% for talk in sorted_talks %}
   {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
-  <div class="col">
+  <div class="col mb-4">
     <div class="card h-100 slide-card">
       {% unless talk.filename == "" or talk.filename == nil or talk.filename == blank %}
       <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="slide-thumbnail">
