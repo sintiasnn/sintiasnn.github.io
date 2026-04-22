@@ -1,59 +1,37 @@
 cv:
   name: Ni Putu Sintia Wati
-  label: Infrastructure Engineer
+  label: "Infrastructure Engineer"
+  location: "Bali, Indonesia"
   email: sintiawati.putu04@gmail.com
-  location: Bali, ID
-  summary: Infrastructure Engineer with over a year of experience in cloud infrastructure, automation, and observability. I focus on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD.
-
+  phone: ""
+  website: https://sintiasnn.github.io
+  summary: "Infrastructure Engineer with experience in cloud infrastructure, automation, and observability. Focused on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD."
   social_networks:
     - network: GitHub
       username: sintiasnn
     - network: LinkedIn
       username: sintiasnn
-
   sections:
     Experience:
-      - company: Zero One Group
+      - company: Your Company Name
         position: Infrastructure Engineer
-        start_date: 2024-10
-        end_date: Present
-        location: Jakarta, ID
+        location: City, Country
+        start_date: 2024-10-01
+        end_date: present
         highlights:
-          - Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates.
-          - Spearheading AWS setups and optimizing resource allocation. This involved fine-tuning compute instance sizes, database configurations, and networking components based on actual usage patterns, resulting in a more cost-effective and scalable infrastructure.
-          - Utilized Docker for containerization and orchestration of applications, improving scalability, deployment speed, and resource utilization.
-
-      - company: PukulEnam
-        position: DevOps Engineer
-        start_date: 2025-06
-        end_date: Present
-        location: Denpasar, ID
-        highlights:
-          - Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates.
-          - Spearheading AWS setups and optimizing resource allocation. This involved fine-tuning compute instance sizes, database configurations, and networking components based on actual usage patterns, resulting in a more cost-effective and scalable infrastructure.
-          - Utilized Docker for containerization and orchestration of applications, improving scalability, deployment speed, and resource utilization.
-
-      - company: Alterstay
-        position: DevOps Engineer
-        start_date: 2025-06
-        end_date: Present
-        location: Denpasar, ID
-        highlights:
-          - Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates.
-          - Spearheading AWS setups and optimizing resource allocation. This involved fine-tuning compute instance sizes, database configurations, and networking components based on actual usage patterns, resulting in a more cost-effective and scalable infrastructure.
-          - Utilized Docker for containerization and orchestration of applications, improving scalability, deployment speed, and resource utilization.
-
+          - Building and maintaining cloud infrastructure using AWS/GCP
+          - Automating workflows with CI/CD pipelines
+          - Implementing observability and monitoring solutions
     Education:
-      - institution: Udayana University
+      - institution: Your University
         area: Computer Science
-        studyType: S.Kom (Sarjana Komputer / Bachelor of Computer Science)
-        start_date: 2019
-        end_date: 2023
-        location: Denpasar, ID
+        studyType: Bachelor
+        location: City, Country
+        start_date: 2020-08-01
+        end_date: 2024-06-01
         highlights:
-          - "GPA: 3.68/4.0"
-          - "Relevant Subject: Operating System Practicum, Data Structure, Data Communication and Computer Networking"
-
+          - "GPA: 4.0/4.0"
+          - Relevant coursework in Cloud Computing and Networking
     Skills:
       - name: Cloud & Infrastructure
         keywords: AWS, Google Cloud Platform, Terraform, Pulumi, Kubernetes, Docker
@@ -61,14 +39,12 @@ cv:
         keywords: GitHub Actions, GitLab CI, Jenkins, ArgoCD
       - name: Observability
         keywords: Prometheus, Grafana, ELK Stack, Datadog
-
     Languages:
       - name: Indonesian
-        summary: Native
+        level: Native
       - name: English
-        summary: Professional Working Proficiency
-
+        level: Professional Working Proficiency
     Certificates:
-      - name: Cloud Practitioner (Example)
+      - name: Cloud Practitioner
         issuer: AWS
         date: 2023-01-01
