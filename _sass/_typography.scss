@@ -5,22 +5,41 @@
 @use "variables" as v;
 
 body {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
-/* Ensure that headers, navbars, and buttons also use Roboto */
-p,
+/* Titles and Headings with Fraunces */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: "Fraunces", serif !important;
+  font-weight: 600;
+}
+
+/* UI Elements with DM Sans */
+p,
 .navbar,
 .btn,
 .nav-item,
-.dropdown-item {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+.dropdown-item,
+li,
+span,
+strong {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Specifically prevent Roboto or any global override from touching icons */
+.fa,
+.fas,
+.fab,
+.far,
+.ai,
+[class^="ai-"],
+[class*=" ai-"] {
+  font-family: inherit !important;
 }
 
 p,
