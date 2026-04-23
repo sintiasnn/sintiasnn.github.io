@@ -1,50 +1,49 @@
 cv:
-  name: "Ni Putu Sintia Wati"
-  label: "Infrastructure Engineer"
-  location: "Bali, ID"
-  email: "sintiawati.putu04@gmail.com"
-  phone: "+6285158757822"
-  website: "https://sintiasnn.github.io"
-  summary: "Infrastructure Engineer with experience in cloud infrastructure, automation, and observability. Focused on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD."
+  name: Ni Putu Sintia Wati
+  label: Infrastructure Engineer
+  location: Bali, ID
+  email: sintiawati.putu04@gmail.com
+  phone: +6285158757822
+  website: https://sintiasnn.github.io
+  summary: Infrastructure Engineer with experience in cloud infrastructure, automation, and observability. Focused on building scalable systems and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD.
   social_networks:
-    - network: "GitHub"
-      username: "sintiasnn"
-    - network: "LinkedIn"
-      username: "sintiasnn"
+    - network: GitHub
+      username: sintiasnn
+    - network: LinkedIn
+      username: sintiasnn
   sections:
     experience:
-      - company: "Zero One Group"
-        position: "Infrastructure Engineer"
-        location: "Jakarta, ID"
-        start_date: "2024-10-28"
-        end_date: "present"
+      - company: Zero One Group
+        position: Infrastructure Engineer
+        location: Jakarta, ID
+        start_date: 2024-10-28
+        end_date: present
         highlights:
-          - "Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates."
-          - "Spearheading AWS setups and optimizing resource allocation, resulting in a more cost-effective and scalable infrastructure."
-          - "Utilized Docker for containerization and orchestration of applications, improving scalability and deployment speed."
+          - Implementing version control and CI/CD pipelines on GitLab for application updates.
+          - Spearheading AWS setups and optimizing resource allocation for scalability.
+          - Utilized Docker for containerization and orchestration of applications.
     education:
-      - institution: "Universitas Udayana"
-        area: "Computer Science"
-        studyType: "Bachelor"
-        location: "Badung, ID"
-        start_date: "2019-08-01"
-        end_date: "2023-06-24"
+      - institution: Universitas Udayana
+        area: Computer Science
+        studyType: Bachelor
+        location: Badung, ID
+        start_date: 2019-08-01
+        end_date: 2023-06-24
         highlights:
-          - "GPA: 3.68/4.0"
-          - "Relevant coursework in Operating Systems, Data Structures, and Networking."
+          - GPA 3.68/4.0
     skills:
-      - name: "Cloud & Infrastructure"
-        keywords: "AWS, Google Cloud Platform, Terraform, Pulumi, Kubernetes, Docker"
-      - name: "Automation & CI/CD"
-        keywords: "GitHub Actions, GitLab CI, Jenkins, ArgoCD"
-      - name: "Observability"
-        keywords: "Prometheus, Grafana, ELK Stack, Datadog"
+      - name: Cloud & Infrastructure
+        keywords: AWS, GCP, Terraform, Pulumi, Kubernetes, Docker
+      - name: Automation & CI/CD
+        keywords: GitHub Actions, GitLab CI, Jenkins, ArgoCD
+      - name: Observability
+        keywords: Prometheus, Grafana, ELK, Datadog
     languages:
-      - name: "Indonesian"
-        level: "Native"
-      - name: "English"
-        level: "Professional Working Proficiency"
+      - name: Indonesian
+        level: Native
+      - name: English
+        level: Professional
     certificates:
-      - name: "Cloud Practitioner"
-        issuer: "AWS"
-        date: "2023-01-01"
+      - name: Cloud Practitioner
+        issuer: AWS
+        date: 2023-01-01
