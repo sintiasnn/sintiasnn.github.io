@@ -12,7 +12,7 @@ cv:
     - network: LinkedIn
       username: sintiasnn
   sections:
-    experience:
+    Experience:
       - company: Zero One Group
         position: Infrastructure Engineer
         location: Jakarta, ID
@@ -22,7 +22,7 @@ cv:
           - Implementing version control and CI/CD pipelines on GitLab for application updates.
           - Spearheading AWS setups and optimizing resource allocation for scalability.
           - Utilized Docker for containerization and orchestration of applications.
-    education:
+    Education:
       - institution: Universitas Udayana
         area: Computer Science
         studyType: Bachelor
@@ -31,19 +31,19 @@ cv:
         end_date: 2023-06-24
         highlights:
           - GPA 3.68/4.0
-    skills:
+    Skills:
       - name: Cloud & Infrastructure
         keywords: AWS, GCP, Terraform, Pulumi, Kubernetes, Docker
       - name: Automation & CI/CD
         keywords: GitHub Actions, GitLab CI, Jenkins, ArgoCD
       - name: Observability
         keywords: Prometheus, Grafana, ELK, Datadog
-    languages:
+    Languages:
       - name: Indonesian
         level: Native
       - name: English
         level: Professional
-    certificates:
+    Certificates:
       - name: Cloud Practitioner
         issuer: AWS
         date: 2023-01-01
