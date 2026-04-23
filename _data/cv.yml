@@ -22,15 +22,62 @@ cv:
           - Implementing version control and CI/CD pipelines on GitLab for application updates.
           - Spearheading AWS setups and optimizing resource allocation for scalability.
           - Utilized Docker for containerization and orchestration of applications.
+      - company: PukulEnam
+        position: Devops Engineer
+        location: Denpasar, ID
+        start_date: 2025-06-01
+        end_date: present
+        highlights:
+          - Implementing version control and CI/CD pipelines on GitLab for application updates.
+          - Spearheading AWS setups and optimizing resource allocation for scalability.
+          - Utilized Docker for containerization and orchestration of applications.
+      - company: GITS Indonesia
+        position: Devops Engineer
+        location: Bandung, ID
+        start_date: 2024-03-15
+        end_date: 2024-10-15
+        highlights:
+          - Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates.
+          - Spearheading GCP project setups and optimizing resource allocation. This involved fine-tuning compute instance sizes, database configurations, and networking components based on actual usage patterns, resulting in a more cost-effective and scalable infrastructure.
+          - Utilized Docker and Kubernetes for containerization and orchestration of applications, improving scalability, deployment speed, and resource utilization.
+      - company: Alterstay
+        position: Backend Engineer (Cloud Concentration)
+        location: Badung, ID
+        start_date: 2023-06-26
+        end_date: 2024-10-15
+        highlights:
+          - Implementing orchestrated version control and CI/CD pipelines on GitLab for application updates.
+          - Spearheading GCP project setups and optimizing resource allocation. This involved fine-tuning compute instance sizes, database configurations, and networking components based on actual usage patterns, resulting in a more cost-effective and scalable infrastructure.
+          - Terraform's modular IaC boosted development scalability, simplifying resource management and enabling parallel work on different infrastructure components like databases, compute, and networking.
+      - company: Bangkit Academy led by Google, Goto, and Traveloka
+        position: Cloud Computing Mentor
+        location: Jakarta, ID
+        start_date: 2023-02-21
+        end_date: 2024-01-15
+        highlights:
+          - Fostered a collaborative learning environment by encouraging knowledge sharing, providing constructive feedback, and fostering a culture of continuous improvement within the organization
+          - Mentored 25 participants, providing personalized guidance and support throughout their learning journey
+          - Led weekly consultations covering reminders, sharing sessions and discussions related to cloud computing
+      - company: Department of Informatics, Udayana University
+        position: Laboratory Assistant - Algorithm and Programming
+        location: Jakarta, ID
+        start_date: 2021-03-01
+        end_date: 2021-06-25
+        highlights:
+          - Collaborate with the lecturer to present engaging and practical materials on algorithms and programming to a diverse audience of around 100 students.
+          - Facilitate interactive sessions, emphasising the fundamental aspects of the C language, including structures, selection, looping, arrays, pointers, functions, and file operations.
+          - Support the lecturer in efficiently recapping and analyzing the final grades of all students enrolled in the course.
     Education:
       - institution: Universitas Udayana
         area: Computer Science
-        studyType: Bachelor
+        studyType: Bachelor of Computer Science
         location: Badung, ID
         start_date: 2019-08-01
         end_date: 2023-06-24
         highlights:
           - GPA 3.68/4.0
+          - Relevant Subject in Operating System Practicum, Data Structure, Data Communication and Computer Networking
+
     Skills:
       - name: Cloud & Infrastructure
         keywords: AWS, GCP, Terraform, Pulumi, Kubernetes, Docker
