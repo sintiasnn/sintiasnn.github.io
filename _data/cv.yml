@@ -80,17 +80,13 @@ cv:
 
     Skills:
       - name: Cloud & Infrastructure
-        keywords: AWS, GCP, Terraform, Pulumi, Kubernetes, Docker
+        keywords: AWS, GCP, Terraform, Docker
       - name: Automation & CI/CD
-        keywords: GitHub Actions, GitLab CI, Jenkins, ArgoCD
+        keywords: GitLab CI
       - name: Observability
-        keywords: Prometheus, Grafana, ELK, Datadog
+        keywords: Prometheus, Grafana
     Languages:
       - name: Indonesian
         level: Native
       - name: English
         level: Professional
-    Certificates:
-      - name: Cloud Practitioner
-        issuer: AWS
-        date: 2023-01-01

@@ -11,20 +11,10 @@ nav_order: 5
 
 {% assign total_stars = 0 %}
 {% assign total_forks = 0 %}
-{% assign languages = "" %}
 {% if site.data.github_repos_data %}
 {% for repo in site.data.github_repos_data %}
 {% assign total_stars = total_stars | plus: repo.stargazers_count %}
 {% assign total_forks = total_forks | plus: repo.forks_count %}
-{% if repo.language and repo.language != "" %}
-{% unless languages contains repo.language %}
-{% if languages == "" %}
-{% assign languages = repo.language %}
-{% else %}
-{% assign languages = languages | append: "," | append: repo.language %}
-{% endif %}
-{% endunless %}
-{% endif %}
 {% endfor %}
 {% endif %}
 
@@ -52,55 +42,9 @@ nav_order: 5
 
 {% if site.data.github_repos_data and site.data.github_repos_data.size > 0 %}
 
-<!-- Featured Repos Section -->
-<!-- Search and Filter Controls -->
-<div class="controls-section mb-4">
-  <div class="row g-3 align-items-center">
-    <div class="col-12 col-md-4">
-      <div class="search-box">
-        <i class="fa-solid fa-search search-icon"></i>
-        <input type="text" id="searchInput" class="form-control" placeholder="Search repositories...">
-      </div>
-    </div>
-    <div class="col-6 col-md-3">
-      <select id="languageFilter" class="form-select">
-        <option value="">All Languages</option>
-        {% assign lang_array = languages | split: "," | sort %}
-        {% for lang in lang_array %}
-        <option value="{{ lang }}">{{ lang }}</option>
-        {% endfor %}
-      </select>
-    </div>
-    <div class="col-6 col-md-3">
-      <select id="sortSelect" class="form-select">
-        <option value="updated">Recently Updated</option>
-        <option value="stars">Most Stars</option>
-        <option value="forks">Most Forks</option>
-        <option value="name">Name (A-Z)</option>
-      </select>
-    </div>
-    <div class="col-12 col-md-2">
-      <button id="resetFilters" class="btn btn-outline-secondary w-100">
-        <i class="fa-solid fa-rotate-left"></i> Reset
-      </button>
-    </div>
-  </div>
-  <div class="results-info mt-3">
-    <span id="resultsCount">Showing all repositories</span>
-  </div>
-</div>
-
-<h2 class="section-title"><i class="fa-solid fa-folder-open me-2"></i>All Repositories</h2>
-
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5" id="reposGrid">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
   {% for repo in site.data.github_repos_data %}
-  <div class="col repo-item mb-4" 
-       data-name="{{ repo.name | downcase }}" 
-       data-description="{{ repo.description | default: '' | downcase | replace: '"', '' }}"
-       data-language="{{ repo.language | default: '' }}"
-       data-stars="{{ repo.stargazers_count }}"
-       data-forks="{{ repo.forks_count }}"
-       data-updated="{{ repo.updated_at }}">
+  <div class="col mb-4">
     <div class="card h-100 repo-card">
       <div class="card-body d-flex flex-column">
         <h5 class="card-title">
@@ -132,12 +76,6 @@ nav_order: 5
   {% endfor %}
 </div>
 
-<nav aria-label="Repositories navigation" class="mt-4">
-  <ul class="pagination pagination-lg justify-content-center" id="paginationNav">
-    <!-- Pagination will be inserted by JavaScript -->
-  </ul>
-</nav>
-
 {% else %}
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
@@ -153,72 +91,6 @@ nav_order: 5
 </div>
 
 <style>
-.repositories h2.section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: var(--global-theme-color);
-  display: flex;
-  align-items: center;
-}
-
-.featured-section {
-  background: linear-gradient(135deg, rgba(var(--global-theme-color-rgb), 0.05) 0%, rgba(var(--global-theme-color-rgb), 0.02) 100%);
-  border-radius: 16px;
-  padding: 2rem;
-  border: 1px solid rgba(var(--global-theme-color-rgb), 0.1);
-}
-
-.featured-card {
-  border: 2px solid rgba(var(--global-theme-color-rgb), 0.2) !important;
-  background: linear-gradient(135deg, #fff 0%, rgba(var(--global-theme-color-rgb), 0.03) 100%);
-}
-
-.featured-badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
-  color: #333;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 0.25rem 0.5rem;
-  border-radius: 12px;
-}
-
-.controls-section {
-  background: var(--global-bg-color);
-  border-radius: 12px;
-  padding: 1.5rem;
-  border: 1px solid var(--global-divider-color);
-}
-
-.search-box {
-  position: relative;
-}
-
-.search-box .search-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--global-text-color-light);
-}
-
-.search-box input {
-  padding-left: 40px;
-  border-radius: 25px;
-}
-
-.form-select {
-  border-radius: 25px;
-}
-
-.results-info {
-  font-size: 0.9rem;
-  color: var(--global-text-color-light);
-}
-
 .repo-card {
   border: none;
   border-radius: 12px;
@@ -253,16 +125,6 @@ nav_order: 5
 
 .repo-meta {
   font-size: 0.8rem;
-}
-
-.repositories .btn-dark {
-  border-radius: 25px;
-  padding: 0.75rem 2rem;
-}
-
-.repositories .btn-outline-primary,
-.repositories .btn-outline-secondary {
-  border-radius: 25px;
 }
 
 .repos-stats {
@@ -307,7 +169,6 @@ nav_order: 5
   margin-right: 0.25rem;
 }
 
-/* Language colors */
 .language-badge {
   font-size: 0.75rem;
   font-weight: 500;
@@ -334,42 +195,6 @@ nav_order: 5
 .language-badge[data-language="Scala"] { background-color: #c22d40; }
 .language-badge:not([data-language]) { background-color: var(--global-theme-color); }
 
-.pagination .page-item .page-link {
-  color: var(--global-theme-color);
-  border-color: var(--global-divider-color);
-  padding: 0.375rem 0.75rem;
-}
-
-.pagination .page-item.active .page-link {
-  background-color: var(--global-theme-color);
-  border-color: var(--global-theme-color);
-  color: white;
-}
-
-.pagination .page-item.disabled .page-link {
-  color: var(--global-text-color-light);
-  pointer-events: none;
-  background-color: transparent;
-}
-
-.pagination .page-item .page-link:hover {
-  background-color: var(--global-theme-color);
-  border-color: var(--global-theme-color);
-  color: white;
-}
-
-.no-results {
-  text-align: center;
-  padding: 3rem;
-  color: var(--global-text-color-light);
-}
-
-.no-results i {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  opacity: 0.5;
-}
-
 @media (max-width: 768px) {
   .stat-number {
     font-size: 2rem;
@@ -377,175 +202,5 @@ nav_order: 5
   .repos-stats {
     gap: 1rem;
   }
-  .featured-section {
-    padding: 1rem;
-  }
 }
 </style>
-
-<script>
-const ITEMS_PER_PAGE = 12;
-let currentPage = 1;
-let totalPages = 1;
-let allItems = [];
-let filteredItems = [];
-
-document.addEventListener('DOMContentLoaded', function() {
-  allItems = Array.from(document.querySelectorAll('#reposGrid > .repo-item'));
-  filteredItems = [...allItems];
-  
-  // Initial sort by recently updated
-  sortItems('updated');
-  
-  // Calculate total pages and show first page
-  totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
-  renderPagination();
-  showPage(1);
-  updateResultsCount();
-  
-  // Event listeners
-  document.getElementById('searchInput').addEventListener('input', applyFilters);
-  document.getElementById('languageFilter').addEventListener('change', applyFilters);
-  document.getElementById('sortSelect').addEventListener('change', function() {
-    sortItems(this.value);
-    applyFilters();
-  });
-  document.getElementById('resetFilters').addEventListener('click', resetFilters);
-});
-
-function sortItems(sortBy) {
-  const grid = document.getElementById('reposGrid');
-  
-  allItems.sort((a, b) => {
-    switch(sortBy) {
-      case 'stars':
-        return parseInt(b.dataset.stars) - parseInt(a.dataset.stars);
-      case 'forks':
-        return parseInt(b.dataset.forks) - parseInt(a.dataset.forks);
-      case 'name':
-        return a.dataset.name.localeCompare(b.dataset.name);
-      case 'updated':
-      default:
-        return new Date(b.dataset.updated) - new Date(a.dataset.updated);
-    }
-  });
-  
-  // Re-append in sorted order
-  allItems.forEach(item => grid.appendChild(item));
-}
-
-function applyFilters() {
-  const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
-  const languageFilter = document.getElementById('languageFilter').value;
-  
-  filteredItems = allItems.filter(item => {
-    const matchesSearch = !searchTerm || 
-      item.dataset.name.includes(searchTerm) || 
-      item.dataset.description.includes(searchTerm);
-    const matchesLanguage = !languageFilter || item.dataset.language === languageFilter;
-    return matchesSearch && matchesLanguage;
-  });
-  
-  // Update visibility
-  allItems.forEach(item => {
-    item.style.display = 'none';
-  });
-  
-  totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
-  currentPage = 1;
-  
-  renderPagination();
-  showPage(1);
-  updateResultsCount();
-}
-
-function updateResultsCount() {
-  const count = filteredItems.length;
-  const total = allItems.length;
-  const resultsEl = document.getElementById('resultsCount');
-  
-  if (count === total) {
-    resultsEl.textContent = `Showing all ${total} repositories`;
-  } else if (count === 0) {
-    resultsEl.textContent = 'No repositories found';
-  } else {
-    resultsEl.textContent = `Showing ${count} of ${total} repositories`;
-  }
-}
-
-function resetFilters() {
-  document.getElementById('searchInput').value = '';
-  document.getElementById('languageFilter').value = '';
-  document.getElementById('sortSelect').value = 'updated';
-  sortItems('updated');
-  applyFilters();
-}
-
-function renderPagination() {
-  const nav = document.getElementById('paginationNav');
-  nav.innerHTML = '';
-  
-  if (totalPages <= 1) return;
-  
-  // Previous button
-  const prevLi = document.createElement('li');
-  prevLi.className = 'page-item';
-  prevLi.id = 'prevPage';
-  prevLi.innerHTML = '<a class="page-link" href="#" onclick="changePage(-1); return false;">&lt;</a>';
-  nav.appendChild(prevLi);
-  
-  // Page numbers (show max 5 pages)
-  let startPage = Math.max(1, currentPage - 2);
-  let endPage = Math.min(totalPages, startPage + 4);
-  startPage = Math.max(1, endPage - 4);
-  
-  for (let i = startPage; i <= endPage; i++) {
-    const li = document.createElement('li');
-    li.className = 'page-item';
-    li.setAttribute('data-page', i);
-    li.innerHTML = `<a class="page-link" href="#" onclick="goToPage(${i}); return false;">${i}</a>`;
-    nav.appendChild(li);
-  }
-  
-  // Next button
-  const nextLi = document.createElement('li');
-  nextLi.className = 'page-item';
-  nextLi.id = 'nextPage';
-  nextLi.innerHTML = '<a class="page-link" href="#" onclick="changePage(1); return false;">&gt;</a>';
-  nav.appendChild(nextLi);
-}
-
-function showPage(page) {
-  const start = (page - 1) * ITEMS_PER_PAGE;
-  const end = start + ITEMS_PER_PAGE;
-  
-  filteredItems.forEach((item, index) => {
-    item.style.display = (index >= start && index < end) ? 'block' : 'none';
-  });
-  
-  currentPage = page;
-  
-  // Update active state
-  document.querySelectorAll('#paginationNav .page-item[data-page]').forEach(li => {
-    li.classList.toggle('active', parseInt(li.getAttribute('data-page')) === page);
-  });
-  
-  // Update disabled state
-  const prevBtn = document.getElementById('prevPage');
-  const nextBtn = document.getElementById('nextPage');
-  if (prevBtn) prevBtn.classList.toggle('disabled', page === 1);
-  if (nextBtn) nextBtn.classList.toggle('disabled', page === totalPages);
-}
-
-function goToPage(page) {
-  showPage(page);
-  document.querySelector('.controls-section').scrollIntoView({ behavior: 'smooth' });
-}
-
-function changePage(delta) {
-  const newPage = currentPage + delta;
-  if (newPage >= 1 && newPage <= totalPages) {
-    goToPage(newPage);
-  }
-}
-</script>
