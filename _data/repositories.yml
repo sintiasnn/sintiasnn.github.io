@@ -16,6 +16,14 @@ featured_repos:
   - google-workspace-user-module
   - chicago-taxi-mlops
   - heart-disease-mlops
+  # Machine learning
+  - Itepee
+  - satellite-image-classification
+  - tiket-review-sentiment
+  # Web
+  - nook-and-note
+  - redesign-smaksata-website
+  - web-sintiasgraphy-sintia
   - sintiasnn.github.io
 
 github_repos: []
