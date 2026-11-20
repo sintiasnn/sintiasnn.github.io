@@ -3,4 +3,19 @@ github_users:
 
 repo_description_lines_max: 2
 
+# Repos shown on /repositories/, in this order.
+# Leave empty ([]) to show every public repo instead.
+featured_repos:
+  # Talk & workshop demos
+  - container-observability-opensuse # openSUSE.Asia Summit 2026
+  - iac-swarm # AWS Community Days Indonesia 2025
+  - terraform-modules-demo # Ramadhan IT Session Dicoding
+  - openstack-tofu # OpenInfra Indonesia Days 2025
+  - api-basic-go # IT Bootcamp Integer#7
+  # Infrastructure & MLOps projects
+  - google-workspace-user-module
+  - chicago-taxi-mlops
+  - heart-disease-mlops
+  - sintiasnn.github.io
+
 github_repos: []

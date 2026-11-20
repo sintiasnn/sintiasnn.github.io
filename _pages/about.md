@@ -90,7 +90,11 @@ latest_posts:
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column-reverse;
-    text-align: center;
+    align-items: stretch;
+  }
+
+  .hero-right {
+    align-self: center;
   }
 
   .hero-image {

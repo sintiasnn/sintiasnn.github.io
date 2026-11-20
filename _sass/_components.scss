@@ -175,23 +175,27 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 1.25rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 2.25rem;
+        height: 2.25rem;
         margin-bottom: 1rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
+        width: 2.4rem;
+        height: 2.75rem;
         margin-bottom: 0.5rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.4rem;
+          height: 2.4rem;
         }
       }
 
@@ -277,4 +281,9 @@ ul.task-list input[type="checkbox"] {
 
 .d2h-diff-table {
   position: relative;
+}
+
+// Custom social logos are loaded as images, so recolour them for dark mode
+html[data-theme="dark"] .social .contact-icons a svg {
+  filter: brightness(0) invert(1);
 }
