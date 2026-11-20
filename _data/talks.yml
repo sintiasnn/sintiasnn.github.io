@@ -69,3 +69,18 @@
   event: "AWS Oceania Virtual Community Day 2026"
   date: "2026-04-11"
   filename: "Going Keyless_ Eliminating Credential Management in AWS Compute Resources.pdf"
+
+- title: "How Python Finds Your Secrets: The Credential Provider Pattern"
+  event: "PyCon ID 2026"
+  date: "2026-08-08"
+  filename: "How Python Finds Your Secrets_ The Credential Provider Pattern.pdf"
+
+- title: "Downsizing Is Easy to Say, Hard to Actually Do"
+  event: "ZOG After Office"
+  date: "2026-09-11"
+  filename: "Downsizing Is Easy to Say, Hard to Actually Do.pdf"
+
+- title: "Container Observability on openSUSE: A Practical Guide with Prometheus, cAdvisor, and Grafana"
+  event: "openSUSE.Asia Summit 2026"
+  date: "2026-10-03"
+  filename: "Container Observability on openSUSE_ A Practical Guide with Prometheus, cAdvisor, and Grafana.pdf"
