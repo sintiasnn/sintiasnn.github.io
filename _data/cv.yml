@@ -3,13 +3,12 @@ cv:
   headline: Infrastructure Engineer
   location: Bali, ID
   email: sintiawati.putu04@gmail.com
-  phone: "+6285158757822"
   website: https://sintiasnn.github.io
   social_networks:
     - network: GitHub
       username: sintiasnn
     - network: LinkedIn
-      username: sintiasnn
+      username: putusintia
   sections:
     Experience:
       - company: Zero One Group
@@ -22,7 +21,7 @@ cv:
           - Spearheading AWS setups and optimizing resource allocation for scalability.
           - Utilized Docker for containerization and orchestration of applications.
       - company: PukulEnam
-        position: Devops Engineer
+        position: DevOps Engineer
         location: Denpasar, ID
         start_date: 2025-06-01
         end_date: present
@@ -31,7 +30,7 @@ cv:
           - Spearheading AWS setups and optimizing resource allocation for scalability.
           - Utilized Docker for containerization and orchestration of applications.
       - company: GITS Indonesia
-        position: Devops Engineer
+        position: DevOps Engineer
         location: Bandung, ID
         start_date: 2024-03-15
         end_date: 2024-10-15
@@ -59,7 +58,7 @@ cv:
           - Led weekly consultations covering reminders, sharing sessions and discussions related to cloud computing
       - company: Department of Informatics, Udayana University
         position: Laboratory Assistant - Algorithm and Programming
-        location: Jakarta, ID
+        location: Badung, ID
         start_date: 2021-03-01
         end_date: 2021-06-25
         highlights:
