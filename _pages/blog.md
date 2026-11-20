@@ -18,6 +18,10 @@ pagination:
 
 <div class="post">
 
+<header class="post-header">
+  <h1 class="post-title">{{ page.title }}</h1>
+</header>
+
 <div class="blog-header text-center mb-5 mt-4">
   <div class="blog-stats mb-4">
     <div class="stat-item">

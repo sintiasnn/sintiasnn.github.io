@@ -20,6 +20,15 @@ module FetchGitHubRepos
       
       # Sort by pushed_at (most recent first) and take top repos
       all_repos.sort_by! { |r| r['pushed_at'] || '' }.reverse!
+
+      # If featured_repos is set, show only those, in the listed order
+      featured = site.data.dig('repositories', 'featured_repos')
+      if featured.is_a?(Array) && !featured.empty?
+        by_name = all_repos.each_with_object({}) { |r, h| h[r['name'].downcase] = r }
+        missing = featured.reject { |n| by_name.key?(n.to_s.downcase) }
+        puts "featured_repos not found on GitHub: #{missing.join(', ')}" unless missing.empty?
+        all_repos = featured.filter_map { |n| by_name[n.to_s.downcase] }
+      end
       
       if all_repos.any?
         site.data['repositories']['github_repos'] = all_repos.map { |r| "#{r['owner']['login']}/#{r['name']}" }

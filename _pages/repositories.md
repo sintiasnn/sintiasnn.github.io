@@ -172,8 +172,12 @@ nav_order: 5
 .language-badge {
   font-size: 0.75rem;
   font-weight: 500;
+  color: #fff;
+  background-color: var(--global-theme-color);
 }
 
+.language-badge[data-language="Jupyter Notebook"] { background-color: #DA5B0B; }
+.language-badge[data-language="Astro"] { background-color: #ff5a03; }
 .language-badge[data-language="Python"] { background-color: #3572A5; }
 .language-badge[data-language="JavaScript"] { background-color: #f1e05a; color: #333; }
 .language-badge[data-language="TypeScript"] { background-color: #2b7489; }
