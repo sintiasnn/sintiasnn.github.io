@@ -7,4 +7,4 @@ nav: true
 nav_order: 6
 ---
 
-Coming soon.
+{% include coming_soon.liquid icon="fa-solid fa-award" message="I'm working on this section. Meanwhile, see my experience on the CV page." %}

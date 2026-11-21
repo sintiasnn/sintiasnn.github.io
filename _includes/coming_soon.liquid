@@ -1,0 +1,7 @@
+<div class="coming-soon text-center">
+  <i class="{{ include.icon | default: 'fa-solid fa-hourglass-half' }} coming-soon-icon"></i>
+  <p class="coming-soon-title">Coming soon</p>
+  {% if include.message %}
+    <p class="coming-soon-message">{{ include.message }}</p>
+  {% endif %}
+</div>
