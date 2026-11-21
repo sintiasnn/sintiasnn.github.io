@@ -108,6 +108,26 @@ layout: default
                   </td>
                 </tr>
               {% endif %}
+              {% for sn in cv.social_networks %}
+                {% case sn.network %}
+                  {% when 'LinkedIn' %}
+                    {% assign sn_url = 'https://www.linkedin.com/in/' | append: sn.username %}
+                  {% when 'GitHub' %}
+                    {% assign sn_url = 'https://github.com/' | append: sn.username %}
+                  {% else %}
+                    {% assign sn_url = null %}
+                {% endcase %}
+                {% if sn_url %}
+                  <tr>
+                    <td class="p-1 pr-2 font-weight-bold">
+                      <b>{{ sn.network }}</b>
+                    </td>
+                    <td class="p-1 pl-2 font-weight-light">
+                      <a href="{{ sn_url }}" target="_blank" rel="noopener">{{ sn.username }}</a>
+                    </td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
             </table>
           </div>
         {% endif %}
