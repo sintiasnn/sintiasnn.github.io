@@ -31,7 +31,7 @@ latest_posts:
     <p class="hero-description">Beyond work, I enjoy improving old projects, reading, writing blogs based on my experiences, and capturing everyday moments through simple photography.</p>
   </div>
   <div class="hero-right">
-    <img src="/assets/img/DSCF3952.JPG" alt="Ni Putu Sintia Wati" class="hero-image">
+    <img src="/assets/img/profile.jpg" alt="Ni Putu Sintia Wati" class="hero-image" width="600" height="697">
     <p class="hero-location">Bali, Indonesia</p>
   </div>
 </div>
