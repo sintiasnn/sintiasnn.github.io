@@ -3,6 +3,7 @@ layout: page
 title: Talks
 permalink: /talks/
 description:
+seo_description: Talks and slides by Putu Sintia on cloud infrastructure, DevOps, Terraform, and observability.
 nav: true
 nav_order: 3
 ---
@@ -41,12 +42,12 @@ nav_order: 3
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
   {% for talk in sorted_talks %}
-  {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
+  {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".jpg" %}
   <div class="col mb-4">
     <div class="card h-100 slide-card">
       {% unless talk.filename == "" or talk.filename == nil or talk.filename == blank %}
       <a href="{{ '/assets/slides/' | append: talk.filename | relative_url }}" target="_blank" class="slide-thumbnail">
-        <img src="{{ '/assets/img/talks/' | append: thumb_name | relative_url }}" alt="{{ talk.title }}" class="card-img-top slide-thumb-img">
+        <img src="{{ '/assets/img/talks/' | append: thumb_name | relative_url }}" alt="{{ talk.title }}" class="card-img-top slide-thumb-img" width="960" height="540" loading="lazy" decoding="async">
       </a>
       {% else %}
       <div class="slide-thumbnail no-slides-placeholder">

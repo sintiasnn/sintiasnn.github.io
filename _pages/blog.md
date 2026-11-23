@@ -1,4 +1,5 @@
 ---
+seo_description: Articles by Putu Sintia about cloud infrastructure, DevOps, and lessons from the field.
 layout: default
 permalink: /blog/
 title: Blogs
@@ -8,6 +9,7 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
+  title: ":title"
   per_page: 5
   sort_field: date
   sort_reverse: true
