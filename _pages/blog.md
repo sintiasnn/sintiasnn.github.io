@@ -1,4 +1,5 @@
 ---
+seo_description: Articles by Putu Sintia about cloud infrastructure, DevOps, and lessons from the field.
 layout: default
 permalink: /blog/
 title: Blogs

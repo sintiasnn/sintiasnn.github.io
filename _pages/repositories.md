@@ -3,6 +3,7 @@ layout: page
 permalink: /repositories/
 title: Repositories
 description:
+seo_description: Selected open-source projects by Putu Sintia, from infrastructure as code to observability and MLOps.
 nav: true
 nav_order: 5
 ---

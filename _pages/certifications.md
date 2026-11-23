@@ -3,6 +3,7 @@ layout: page
 title: Certifications
 permalink: /certifications/
 description:
+seo_description: Certifications of Putu Sintia. Coming soon.
 nav: true
 nav_order: 6
 ---
