@@ -399,7 +399,7 @@ html[data-theme="dark"] .social .contact-icons a svg {
 
   .home-timeline-year {
     flex: 0 0 3.5rem;
-    font-family: monospace;
+    font-weight: 600;
     font-size: 0.9rem;
     line-height: 1.7;
     color: var(--global-text-color-light);
@@ -412,7 +412,7 @@ html[data-theme="dark"] .social .contact-icons a svg {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
-  font-family: monospace;
+  font-weight: 600;
 
   a {
     color: var(--global-text-color-light);

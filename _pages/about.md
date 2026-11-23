@@ -95,7 +95,6 @@ latest_posts:
 
 .hero-location {
   margin-top: 0.5rem;
-  font-family: monospace;
   font-size: 0.9rem;
   color: var(--global-text-color-light);
 }
