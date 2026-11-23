@@ -36,6 +36,19 @@ latest_posts:
   </div>
 </div>
 
+<div class="home-stats">
+  <a href="{{ '/cv/' | relative_url }}"><span class="home-stat-number">3+</span> years</a>
+  <a href="{{ '/talks/' | relative_url }}"><span class="home-stat-number">{{ site.data.talks.size }}</span> talks</a>
+  <a href="{{ '/blog/' | relative_url }}"><span class="home-stat-number">{{ site.posts.size }}</span> articles</a>
+</div>
+
+<h2 class="home-section-title">Timeline</h2>
+<ol class="home-timeline">
+  {% for item in site.data.timeline %}
+  <li><span class="home-timeline-year">{{ item.year }}</span><span>{{ item.text }}</span></li>
+  {% endfor %}
+</ol>
+
 <style>
 .hero-section {
   display: flex;

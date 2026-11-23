@@ -23,9 +23,23 @@ nav_order: 3
 
 {% if site.data.talks.size > 0 %}
 
-{% assign sorted_talks = site.data.talks | sort: "date" | reverse %}
+{% assign talks_by_year = site.data.talks | group_by_exp: "t", "t.date | slice: 0, 4" | sort: "name" | reverse %}
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5" id="talksGrid">
+<nav class="talks-years" aria-label="Jump to year">
+  {% for year in talks_by_year %}
+  <a href="#talks-{{ year.name }}">{{ year.name }}</a>
+  {% endfor %}
+</nav>
+
+{% for year in talks_by_year %}
+
+<h2 class="talks-year" id="talks-{{ year.name }}">
+  {{ year.name }} <span class="talks-year-count">{{ year.items.size }} {% if year.items.size == 1 %}talk{% else %}talks{% endif %}</span>
+</h2>
+
+{% assign sorted_talks = year.items | sort: "date" | reverse %}
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
   {% for talk in sorted_talks %}
   {% assign thumb_name = talk.filename | remove: ".pdf" | append: ".png" %}
   <div class="col mb-4">
@@ -64,11 +78,7 @@ nav_order: 3
   </div>
   {% endfor %}
 </div>
-
-<nav aria-label="Talks page navigation">
-  <ul class="pagination pagination-lg justify-content-center" id="paginationNav">
-  </ul>
-</nav>
+{% endfor %}
 
 {% else %}
 
@@ -217,78 +227,3 @@ nav_order: 3
   opacity: 0.6;
 }
 </style>
-
-<script>
-const ITEMS_PER_PAGE = 12;
-let currentPage = 1;
-let totalPages = 1;
-
-document.addEventListener('DOMContentLoaded', function() {
-  const items = document.querySelectorAll('#talksGrid > .col');
-  totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
-  
-  renderPagination();
-  showPage(1);
-});
-
-function renderPagination() {
-  const nav = document.getElementById('paginationNav');
-  nav.innerHTML = '';
-  
-  // Previous button
-  const prevLi = document.createElement('li');
-  prevLi.className = 'page-item';
-  prevLi.id = 'prevPage';
-  prevLi.innerHTML = '<a class="page-link" href="#" onclick="changePage(-1); return false;">&lt;</a>';
-  nav.appendChild(prevLi);
-  
-  // Page numbers
-  for (let i = 1; i <= totalPages; i++) {
-    const li = document.createElement('li');
-    li.className = 'page-item';
-    li.setAttribute('data-page', i);
-    li.innerHTML = `<a class="page-link" href="#" onclick="goToPage(${i}); return false;">${i}</a>`;
-    nav.appendChild(li);
-  }
-  
-  // Next button
-  const nextLi = document.createElement('li');
-  nextLi.className = 'page-item';
-  nextLi.id = 'nextPage';
-  nextLi.innerHTML = '<a class="page-link" href="#" onclick="changePage(1); return false;">&gt;</a>';
-  nav.appendChild(nextLi);
-}
-
-function showPage(page) {
-  const items = document.querySelectorAll('#talksGrid > .col');
-  const start = (page - 1) * ITEMS_PER_PAGE;
-  const end = start + ITEMS_PER_PAGE;
-  
-  items.forEach((item, index) => {
-    item.style.display = (index >= start && index < end) ? 'block' : 'none';
-  });
-  
-  currentPage = page;
-  
-  // Update active state
-  document.querySelectorAll('#paginationNav .page-item[data-page]').forEach(li => {
-    li.classList.toggle('active', parseInt(li.getAttribute('data-page')) === page);
-  });
-  
-  // Update disabled state
-  document.getElementById('prevPage').classList.toggle('disabled', page === 1);
-  document.getElementById('nextPage').classList.toggle('disabled', page === totalPages);
-}
-
-function goToPage(page) {
-  showPage(page);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function changePage(delta) {
-  const newPage = currentPage + delta;
-  if (newPage >= 1 && newPage <= totalPages) {
-    goToPage(newPage);
-  }
-}
-</script>
