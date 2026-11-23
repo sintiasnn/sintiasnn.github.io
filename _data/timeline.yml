@@ -1,0 +1,10 @@
+# Short career timeline shown on the Home page (newest last).
+# Keep each line short — the CV page has the full details.
+- year: "2021"
+  text: "Laboratory Assistant at Universitas Udayana"
+- year: "2023"
+  text: "Cloud Computing Mentor at Bangkit Academy, first cloud role at Alterstay"
+- year: "2024"
+  text: "DevOps Engineer at GITS Indonesia, first talks as a speaker"
+- year: "Now"
+  text: "Infrastructure Engineer at Zero One Group and tech speaker"

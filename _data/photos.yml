@@ -1,0 +1,24 @@
+# Photos shown on /photos/ (in this order).
+# Each photo needs two files in assets/img/photos/:
+#   <file>.jpg        full size (max 1600px), shown when clicked
+#   <file>-thumb.jpg  600px, shown in the grid
+- file: photo-01
+  alt: Pink zinnia among green leaves
+- file: photo-02
+  alt: Close-up of colourful Balinese offering decorations and young palm leaves
+- file: photo-03
+  alt: Bright magenta zinnia in bloom
+- file: photo-04
+  alt: Traditional fishing boats resting on a beach under shady trees
+- file: photo-05
+  alt: Colourful outrigger fishing boats on a sandy beach
+- file: photo-06
+  alt: Hand holding a bundle of pale twigs
+- file: photo-07
+  alt: Paper coffee cup on a café table
+- file: photo-08
+  alt: Sunset sky behind trees and a small gazebo
+- file: photo-09
+  alt: Pink sunset sky over palm trees
+- file: photo-10
+  alt: Hand holding a pale pink flower

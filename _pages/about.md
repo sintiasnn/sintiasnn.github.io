@@ -28,13 +28,26 @@ latest_posts:
     <p class="hero-intro">Hi, I'm Ni Putu Sintia Wati — an Infrastructure Engineer with 3+ years of experience in cloud infrastructure, automation, and observability.</p>
     <p class="hero-description">I focus on building scalable systems, optimizing developer workflows, and ensuring reliability through Infrastructure as Code, monitoring, and CI/CD.</p>
     <p class="hero-description">I also love sharing what I learn. I've spoken at events like PyCon ID, AWS Community Day, openSUSE.Asia Summit, and DevFest — you can find my slides on the <a href="/talks/">Talks</a> page.</p>
-    <p class="hero-description">Beyond work, I enjoy improving old projects, reading, writing blogs based on my experiences, and capturing everyday moments through simple photography.</p>
+    <p class="hero-description">Beyond work, I enjoy improving old projects, reading, writing blogs based on my experiences, and capturing everyday moments through simple <a href="/photos/">photography</a>.</p>
   </div>
   <div class="hero-right">
     <img src="/assets/img/profile.jpg" alt="Ni Putu Sintia Wati" class="hero-image" width="600" height="697">
     <p class="hero-location">Bali, Indonesia</p>
   </div>
 </div>
+
+<div class="home-stats">
+  <a href="{{ '/cv/' | relative_url }}"><span class="home-stat-number">3+</span> years</a>
+  <a href="{{ '/talks/' | relative_url }}"><span class="home-stat-number">{{ site.data.talks.size }}</span> talks</a>
+  <a href="{{ '/blog/' | relative_url }}"><span class="home-stat-number">{{ site.posts.size }}</span> articles</a>
+</div>
+
+<h2 class="home-section-title">Timeline</h2>
+<ol class="home-timeline">
+  {% for item in site.data.timeline %}
+  <li><span class="home-timeline-year">{{ item.year }}</span><span>{{ item.text }}</span></li>
+  {% endfor %}
+</ol>
 
 <style>
 .hero-section {
@@ -82,7 +95,6 @@ latest_posts:
 
 .hero-location {
   margin-top: 0.5rem;
-  font-family: monospace;
   font-size: 0.9rem;
   color: var(--global-text-color-light);
 }
