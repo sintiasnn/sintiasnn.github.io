@@ -48,12 +48,12 @@ nav_order: 5
   <div class="col mb-4">
     <div class="card h-100 repo-card">
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title">
+        <h2 class="h5 card-title">
           <a href="{{ repo.html_url }}" target="_blank">
             <i class="fa-brands fa-github me-1"></i> {{ repo.name }}
           </a>
           {% if repo.fork %}<span class="badge bg-secondary ms-2">fork</span>{% endif %}
-        </h5>
+        </h2>
         <p class="card-text text-muted flex-grow-1">{{ repo.description | default: "No description available" | truncate: 100 }}</p>
         <div class="repo-meta mb-2">
           <small class="text-muted"><i class="fa-solid fa-clock"></i> Updated {{ repo.updated_at | date: "%b %d, %Y" }}</small>

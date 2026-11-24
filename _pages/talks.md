@@ -58,7 +58,7 @@ nav_order: 3
       </div>
       {% endunless %}
       <div class="card-body d-flex flex-column">
-        <h5 class="card-title mb-2">{{ talk.title }}</h5>
+        <h3 class="h5 card-title mb-2">{{ talk.title }}</h3>
         <div class="talk-meta mb-3">
           <span class="talk-event"><i class="fa-solid fa-calendar-check me-1"></i> {{ talk.event }}</span>
           <span class="talk-date"><i class="fa-regular fa-calendar me-1"></i> {{ talk.date | date: "%b %d, %Y" }}</span>
