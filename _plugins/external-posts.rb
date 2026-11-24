@@ -67,6 +67,11 @@ module ExternalPosts
       doc.data['description'] = content[:summary]
       doc.data['date'] = content[:published]
       doc.data['redirect'] = url
+      # Generated documents skip front matter defaults, so set the layout here.
+      # Without it the page is raw feed HTML with no head, styles, or redirect.
+      doc.data['layout'] = 'post'
+      # The original lives on the external site; keep the copy out of the sitemap.
+      doc.data['sitemap'] = false
       
       # Apply default categories and tags from source configuration
       if src['categories'] && src['categories'].is_a?(Array) && !src['categories'].empty?
